@@ -1,0 +1,20 @@
+/* fontawesome cdn  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* common css */
+
+.margin-Y{
+    margin: 100px 0;
+}
+
+/* preloader setup */
+
+#preloader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background : #fff url("../images/preloader.gif") no-repeat center;
+    background-size: 10%;
+}
+
