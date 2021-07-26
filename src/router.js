@@ -36,9 +36,9 @@ router.get("/login", (req, res) => {
 router.get("/logout", auth, async (req, res) => {
     try
     {
-        req.userMatch.filter((val) => {
+        req.userMatch.tokens = req.userMatch.tokens.filter((val) => {
             return val.token !== req.token;
-        })
+        });
         // req.userMatch.tokens = []; //delete all drive data or cookie
         res.clearCookie("jwt");
         await req.userMatch.save();
